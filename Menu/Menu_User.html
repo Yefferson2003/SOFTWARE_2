@@ -1,0 +1,984 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../IMG/favicoin.png">
+    <link rel="stylesheet" href="../CSS/style.css">
+    <script defer src="../JS/script.js"></script>
+
+    <title>Empresa Bio</title>
+  
+    <!-- Latest compiled and minified CSS --> 
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+  
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+</head>
+<body>
+<!-- Navegador web -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <div class="container-fluid collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav">
+            <li class="nav-item active">
+              <a data-target="#inicio" class="nav-link" href="#">INICIO <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink3" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Canecas
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <a data-target="#add-ca" class="dropdown-item" href="#">Agregar</a>
+                <a data-target="#edit-ca" class="dropdown-item" href="#">Consultar</a>
+              </div>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink3" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Colegios
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <a data-target="#add-c" class="dropdown-item" href="#">Agregar</a>
+                <a data-target="#edit-c" class="dropdown-item" href="#">Consultar</a>
+              </div>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink4" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Facturas
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <a data-target="#add-f" class="dropdown-item" href="#">Crear</a>
+                <a data-target="#edit-f" class="dropdown-item" href="#">Consultar</a>
+              </div>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink4" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Consultas Por Material
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <a data-target="#pla-co" class="dropdown-item" href="#">Plastico recogido por colegio</a>
+                <a data-target="#pla-o" class="dropdown-item" href="#">Plastico recogio por opeario </a>
+                <a data-target="#pla-os" class="dropdown-item" href="#">Plastico recogio por opearios </a>
+                <a data-target="#pla-ca" class="dropdown-item" href="#">Plastico recogio por caneca </a>
+              </div>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink4" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Consultas Por Pagos
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <a data-target="#din-co" class="dropdown-item" href="#">Dinero pagado por colegio</a>
+                <a data-target="#din-t" class="dropdown-item" href="#">Dinero paga por tiempo</a>
+              </div>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink4" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Consultas Por Operario
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <a data-target="#rec-co" class="dropdown-item" href="#">Recolección por colegio</a>
+              </div>
+            </li>
+          </ul>
+        </div>
+        
+        <form class="form-inline my-2 my-lg-0">
+            <!--<button type="button" class="btn btn-light">Cerrar Sección</button>-->
+            <a href="../Login/Login.html" class="btn btn-light" tabindex="-1" role="button" aria-disabled="true">Cerrar Secion</a>
+        </form>
+    </nav>
+
+    <!-- Contenido -->
+    <div class="content">
+
+      <!-- Inicio -->
+      <div data-content id="inicio" class="active">
+        <main class="container">
+          <div class="p-4 p-md-5 mt-4 mb-4 text-white rounded bg-info">
+            <div class="col-md-6 px-0">
+              <h1 class="display-4 fst-italic">Título de una publicación de blog destacada más extensa</h1>
+              <p class="lead my-3">Múltiples líneas de texto que forman el encabezado, informando a los nuevos lectores de manera rápida y eficiente sobre lo que es más interesante en el contenido de esta publicación.</p>
+              <p class="lead mb-0"><a href="#" class="text-white fw-bold">Continuar leyendo...</a></p>
+            </div>
+            </div>
+              <div class="row mb-2">
+              <div class="col-md-6">
+              <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relativ bg-light">
+              <div class="col p-4 d-flex flex-column position-static">
+              <strong class="d-inline-block mb-2 text-primary">Internacional</strong>
+              <h3 class="mb-0">Publicación destacada</h3>
+              <div class="mb-1 text-muted">Nov 12</div>
+              <p class="card-text mb-auto">Esta es una tarjeta más amplia con texto de apoyo a continuación como una introducción natural a contenido adicional.</p>
+              <a href="#" class="stretched-link">Continuar leyendo</a>
+          </div>
+        </main>
+      </div>
+
+      <!-- Registrar Administrador -->
+      <div data-content id="add-a">
+        <div class="container py-5 h-100">
+          <div class="row d-flex justify-content-center align-items-center h-100">
+            <div class="col-12 col-md-8 col-lg-6 col-xl-10">
+              <div class="card bg-secondary text-white" style="border-radius: 1rem;">
+                <div class="card-body p-5">
+      
+                  <div class="mb-md-5 mt-md-4 pb-5">
+      
+                    <h2 class="fw-bold mb-2 text-uppercase">¡Registrar Nuevo Administrador!</h2>
+
+                    <p class="text-white-50 mb-5">Porfavor ingrese los datos del Usuario</p>
+                    <form action="#">
+                    <!--Validacción ID, 10 caracteres, solo numeros, obligatorio-->
+                    <div class="form-outline form-white mb-4">
+                      <label class="form-label" for="typeTextX">Número de documento</label>
+                      <input minlength="10" maxlength="10" type="text" id="typeTextX" class="form-control form-control-lg" required pattern="[0-9]+"/> 
+                    </div>
+                    <!--Validacción NOMBRE, 30 caracteres, solo letras, obligatorio-->
+                    <div class="form-outline form-white mb-4">
+                      <label class="form-label" for="typeTextX">Nombre</label>
+                      <input minlength="2" maxlength="30" type="text" id="typeTextX" class="form-control form-control-lg" required pattern="[a-zA-Z]+"/> 
+                    </div>
+                    <!--Validacción Contraseña, minimo 8 maximo 15 caracteres, obligatorio-->
+                    <div class="form-outline form-white mb-4">
+                      <label class="form-label" for="typePasswordX">Contraseña</label>
+                      <input minlength="8" maxlength="15" type="text" id="typePasswordX" class="form-control form-control-lg" required/>              
+                    </div>
+      
+                    <button class="btn btn-outline-light btn-lg px-5" type="submit">Registrar</button>
+                    </form>
+                  </div>
+                        
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Editar Administrador -->
+      <div data-content id="edit-a">
+        <div class="container py-5 h-100">
+          <div class="row d-flex justify-content-center align-items-center h-100">
+            <div class="col-12 col-md-8 col-lg-6 col-xl-10">
+              <div class="card bg-secondary text-white" style="border-radius: 1rem;">
+                <div class="card-body p-5">
+      
+                  <div class="mb-md-5 mt-md-4 pb-5 ">
+      
+                    <h2 class="fw-bold mb-2 text-uppercase">¡Consultar Administrador!</h2>
+
+                    <p class="text-white-50 mb-5">Porfavor ingrese el dato a buscar del Usuario</p>
+                    <form action="#">
+                    <!--Validacción ID, 10 caracteres, solo numeros, obligatorio-->
+                    <div class="form-outline form-white mb-4">
+                      <label class="form-label" for="typeEmailX">Número de documento</label>
+                      <input minlength="10" maxlength="10" type="text" id="typeTextX" class="form-control form-control-lg" required pattern="[0-9]+"/> 
+                    </div>
+
+                    <button class="btn btn-outline-light btn-lg px-5 " type="submit">Buscar</button>
+                    
+                    <!--Validacción NOMBRE, 30 caracteres, solo letras, obligatorio-->
+                    <div class="form-outline form-white mb-4 mt-4">
+                      <label class="form-label" for="typeTextX">Nombre</label>
+                      <input minlength="2" maxlength="30" type="text" id="typeTextX" class="form-control form-control-lg" required pattern="[a-zA-Z]+"/> 
+                    </div>
+                    <!--Validacción Contraseña, minimo 8 maximo 15 caracteres, obligatorio-->
+                    <div class="form-outline form-white mb-4">
+                      <label class="form-label" for="typePasswordX">Contraseña</label>
+                      <input minlength="8" maxlength="15" type="text" id="typePasswordX" class="form-control form-control-lg" required/>              
+                    </div>
+      
+                    <button class="btn btn-outline-light btn-lg px-5" type="submit">Guardar Cambios</button>
+                    <button class="btn btn-outline-light btn-lg px-5" type="submit">Eliminar</button>
+                    </form>
+                  </div>
+                        
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Agregar Operario -->
+      <div data-content id="add-o">
+        <div class="container py-5 h-100">
+          <div class="row d-flex justify-content-center align-items-center h-100">
+            <div class="col-12 col-md-8 col-lg-6 col-xl-10">
+              <div class="card bg-secondary text-white" style="border-radius: 1rem;">
+                <div class="card-body p-5">
+      
+                  <div class="mb-md-5 mt-md-4 pb-5">
+      
+                    <h2 class="fw-bold mb-2 text-uppercase">¡Registrar Nuevo Operario!</h2>
+
+                    <p class="text-white-50 mb-5">Porfavor ingrese los datos del Usuario!</p>
+                    <form action="#">
+                    <!--Validacción ID, 10 caracteres, solo numeros, obligatorio-->
+                    <div class="form-outline form-white mb-4">
+                      <label class="form-label" for="typeEmailX">Número de documento</label>
+                      <input minlength="10" maxlength="10" type="text" id="typeTextX" class="form-control form-control-lg" required pattern="[0-9]+"/> 
+                    </div>
+                    <!--Validacción NOMBRE, 30 caracteres, solo letras, obligatorio-->
+                    <div class="form-outline form-white mb-4">
+                      <label class="form-label" for="typeEmailX">Nombre</label>
+                      <input minlength="2" maxlength="30" type="text" id="typeTextX" class="form-control form-control-lg" required pattern="[a-zA-Z]+"/> 
+                    </div>
+                    <!--Validacción TELEFONO, 10 caracteres, solo numeros, obligatorio-->
+                    <div class="form-outline form-white mb-4">
+                      <label class="form-label" for="typeEmailX">Teléfono</label>
+                      <input minlength="10" maxlength="10" type="text" id="typeTelX" class="form-control form-control-lg" required pattern="[0-9]+"/> 
+                    </div>
+                    <!--Validacción Contraseña, minimo 8 maximo 15 caracteres, obligatorio-->
+                    <div class="form-outline form-white mb-4">
+                      <label class="form-label" for="typePasswordX">Contraseña</label>
+                      <input minlength="8" maxlength="15" type="text" id="typePasswordX" class="form-control form-control-lg" required/>              
+                    </div>
+                    <!--Validacción CORREO, 30 caracteres, obligatorio-->
+                    <div class="form-outline form-white mb-4">
+                      <label class="form-label" for="typeEmailX">Correo</label>
+                      <input minlength="5" maxlength="30" type="text" id="typeEmailX" class="form-control form-control-lg" required/> 
+                    </div>
+                    <!--Validacción SUELDO, 10 caracteres, solo numeros, obligatorio-->
+                    <div class="form-outline form-white mb-4">
+                      <label class="form-label" for="typeEmailX">Sueldo</label>
+                      <input minlength="6" maxlength="10" type="text" id="typeSueldoX" class="form-control form-control-lg" required pattern="[0-9]+"/> 
+                    </div>
+      
+                    <button class="btn btn-outline-light btn-lg px-5" type="submit">Registrar</button>
+                    </form>
+                  </div>
+                        
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Editar Operario -->
+      <div data-content id="edit-o">
+        <div class="container py-5 h-100">
+          <div class="row d-flex justify-content-center align-items-center h-100">
+            <div class="col-12 col-md-8 col-lg-6 col-xl-10">
+              <div class="card bg-secondary text-white" style="border-radius: 1rem;">
+                <div class="card-body p-5">
+      
+                  <div class="mb-md-5 mt-md-4 pb-5">
+      
+                    <h2 class="fw-bold mb-2 text-uppercase">¡Consultar Operario!</h2>
+
+                    <p class="text-white-50 mb-5">Porfavor ingrese el dato a buscar del Usuario</p>
+                    <form action="#">
+                    <!--Validacción ID, 10 caracteres, solo numeros, obligatorio-->
+                    <div class="form-outline form-white mb-4">
+                      <label class="form-label" for="typeEmailX">Número de documento</label>
+                      <input minlength="10" maxlength="10" type="text" id="typeTextX" class="form-control form-control-lg" required pattern="[0-9]+"/> 
+                    </div>
+
+                    <button class="btn btn-outline-light btn-lg px-5" type="submit">Buscar</button>
+                    <!--Validacción NOMBRE, 30 caracteres, solo letras, obligatorio-->
+                    <div class="form-outline form-white mb-4 mt-4">
+                      <label class="form-label" for="typeEmailX">Nombre</label>
+                      <input minlength="2" maxlength="30" type="text" id="typeTextX" class="form-control form-control-lg" required pattern="[a-zA-Z]+"/> 
+                    </div>
+                    <!--Validacción TELEFONO, 10 caracteres, solo numeros, obligatorio-->
+                    <div class="form-outline form-white mb-4">
+                      <label class="form-label" for="typeEmailX">Teléfono</label>
+                      <input minlength="10" maxlength="10" type="text" id="typeTelX" class="form-control form-control-lg" required pattern="[0-9]+"/> 
+                    </div>
+                    <!--Validacción Contraseña, minimo 8 maximo 15 caracteres, obligatorio-->
+                    <div class="form-outline form-white mb-4">
+                      <label class="form-label" for="typePasswordX">Contraseña</label>
+                      <input minlength="8" maxlength="15" type="text" id="typePasswordX" class="form-control form-control-lg" required/>              
+                    </div>
+
+                    <div class="form-outline form-white mb-4">
+                      <label class="form-label" for="typeEmailX">Correo</label>
+                      <input type="email" id="typeEmailX" class="form-control form-control-lg" required/> 
+                    </div>
+                    <!--Validacción SUELDO, 10 caracteres, solo numeros, obligatorio-->
+                    <div class="form-outline form-white mb-4">
+                      <label class="form-label" for="typeEmailX">Sueldo</label>
+                      <input minlength="6" maxlength="7" type="text" id="typeSueldoX" class="form-control form-control-lg" required pattern="[0-9]+"/> 
+                    </div>
+                    <button class="btn btn-outline-light btn-lg px-5" type="submit">Guardar Cambios</button>
+                    <button class="btn btn-outline-light btn-lg px-5" type="submit">Suspender</button>
+                    </form>
+                  </div>
+                        
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Agregar Caneca -->
+      <div data-content id="add-ca">
+        <div class="container py-5 h-100">
+          <div class="row d-flex justify-content-center align-items-center h-100">
+            <div class="col-12 col-md-8 col-lg-6 col-xl-10">
+              <div class="card bg-secondary text-white" style="border-radius: 1rem;">
+                <div class="card-body p-5">
+      
+                  <div class="mb-md-5 mt-md-4 pb-5">
+      
+                    <h2 class="fw-bold mb-2 text-uppercase">¡Registrar Nueva Caneca!</h2>
+
+                    <p class="text-white-50 mb-5">Porfavor ingrese los datos del elemento</p>
+                    <form action="">
+                    <!--Validacción ID, 5 caracteres, solo numeros, obligatorio-->
+                    <div class="form-outline form-white mb-4">
+                      <label class="form-label" for="typeEmailX">Código</label>
+                      <input minlength="5" maxlength="5" type="text" id="typeTextX" class="form-control form-control-lg" required pattern="[0-9]+"/> 
+                    </div>
+                    <!--Validacción TAMAÑO, 4 caracteres, solo numeros, obligatorio-->
+                    <div class="form-outline form-white mb-4">
+                      <label class="form-label" for="typeEmailX">Longitud M (Ancho x Alto)</label>
+                      <input minlength="1" maxlength="4" type="text" id="typeEmailX" class="form-control form-control-lg" required pattern="[0-9,]+"/> 
+                    </div>
+                    <!--Validacción CAPACIDAD, 4 caracteres, solo numeros, obligatorio-->
+                    <div class="form-outline form-white mb-4">
+                      <label class="form-label" for="typeEmailX">Capacidad kg</label>
+                      <input minlength="1" maxlength="4" type="text" id="typeEmailX" class="form-control form-control-lg" required pattern="[0-9,]+"/> 
+                    </div>
+
+                    <button class="btn btn-outline-light btn-lg px-5" type="submit">Registrar</button>
+                    </form>
+                  </div>
+                        
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Editar Caneca -->
+      <div data-content id="edit-ca">
+        <div class="container py-5 h-100">
+          <div class="row d-flex justify-content-center align-items-center h-100">
+            <div class="col-12 col-md-8 col-lg-6 col-xl-10">
+              <div class="card bg-secondary text-white" style="border-radius: 1rem;">
+                <div class="card-body p-5">
+      
+                  <div class="mb-md-5 mt-md-4 pb-5">
+      
+                    <h2 class="fw-bold mb-2 text-uppercase">¡Consultar Caneca!</h2>
+
+                    <p class="text-white-50 mb-5">Porfavor ingrese el dato a buscar del elemento</p>
+                    <form action="">
+                    <!--Validacción ID, 5 caracteres, solo numeros, obligatorio-->
+                    <div class="form-outline form-white mb-4">
+                      <label class="form-label" for="typeEmailX">Código</label>
+                      <input minlength="5" maxlength="5" type="text" id="typeTextX" class="form-control form-control-lg" required pattern="[0-9]+"/> 
+                    </div>
+
+                    <button class="btn btn-outline-light btn-lg px-5" type="submit">Buscar</button>
+                    <!--Validacción TAMAÑO, 4 caracteres, solo numeros, obligatorio-->
+                    <div class="form-outline form-white mb-4 mt-4">
+                      <label class="form-label" for="typeEmailX">Longitud M (Ancho x Alto)</label>
+                      <input minlength="1" maxlength="4" type="text" id="typeEmailX" class="form-control form-control-lg" required pattern="[0-9,]+"/> 
+                    </div>
+                    <!--Validacción CAPACIDAD, 4 caracteres, solo numeros, obligatorio-->
+                    <div class="form-outline form-white mb-4">
+                      <label class="form-label" for="typeEmailX">Capacidad kg</label>
+                      <input minlength="1" maxlength="4" type="text" id="typeEmailX" class="form-control form-control-lg" required pattern="[0-9,]+"/> 
+                    </div>
+
+                    <button class="btn btn-outline-light btn-lg px-5" type="submit">Suspender</button>
+                    </form>
+                  </div>
+                        
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Agregar Colegio -->
+      <div data-content id="add-c">
+        <div class="container py-5 h-100">
+          <div class="row d-flex justify-content-center align-items-center h-100">
+            <div class="col-12 col-md-8 col-lg-6 col-xl-10">
+              <div class="card bg-secondary text-white" style="border-radius: 1rem;">
+                <div class="card-body p-5">
+      
+                  <div class="mb-md-5 mt-md-4 pb-5">
+      
+                    <h2 class="fw-bold mb-2 text-uppercase">¡Registrar Nuevo Colegio!</h2>
+
+                    <p class="text-white-50 mb-5">Porfavor ingrese los datos del Usuario</p>
+                    <form action="#">
+                    <!--Validacción ID, 10 a 15 caracteres, solo numeros, obligatorio-->
+                    <div class="form-outline form-white mb-4">
+                      <label class="form-label" for="typeEmailX">Nit</label>
+                      <input minlength="10" maxlength="15" type="text" id="typeEmailX" class="form-control form-control-lg" required pattern="[0-9-]+"/> 
+                    </div>
+                    <!--Validacción NOMBRE, 30 caracteres, solo letras, obligatorio-->
+                    <div class="form-outline form-white mb-4">
+                      <label class="form-label" for="typeEmailX">Nombre</label>
+                      <input minlength="2" maxlength="30" type="text" id="typeTextX" class="form-control form-control-lg" required pattern="[a-zA-Z]+"/> 
+                    </div>
+                    <!--Validacción DIRECCION, 30 caracteres, solo letras simbolos, obligatorio-->
+                    <div class="form-outline form-white mb-4">
+                      <label class="form-label" for="typeEmailX">Dirección</label>
+                      <input minlength="2" maxlength="30" type="text" id="typeEmailX" class="form-control form-control-lg" required pattern="[a-zA-Z0-9-_]+"/> 
+                    </div>
+                    <!--Validacción TELEFONO, 10 caracteres, solo numeros, obligatorio-->
+                    <div class="form-outline form-white mb-4">
+                      <label class="form-label" for="typeEmailX">Teléfono</label>
+                      <input minlength="10" maxlength="10" type="text" id="typeTelX" class="form-control form-control-lg" required pattern="[0-9]+"/> 
+                    </div>
+
+                    <button class="btn btn-outline-light btn-lg px-5" type="submit">Registrar</button>
+                    </form>
+                  </div>
+                        
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Editar Colegio -->
+      <div data-content id="edit-c">
+        <div class="container py-5 h-100">
+          <div class="row d-flex justify-content-center align-items-center h-100">
+            <div class="col-12 col-md-8 col-lg-6 col-xl-10">
+              <div class="card bg-secondary text-white" style="border-radius: 1rem;">
+                <div class="card-body p-5">
+      
+                  <div class="mb-md-5 mt-md-4 pb-5">
+      
+                    <h2 class="fw-bold mb-2 text-uppercase">¡Consultar Colegio!</h2>
+
+                    <p class="text-white-50 mb-5">Porfavor ingrese el dato a buscar del Usuario</p>
+                    <form action="">
+                    <!--Validacción ID, 10 a 15 caracteres, solo numeros, obligatorio-->
+                    <div class="form-outline form-white mb-4">
+                      <label class="form-label" for="typeEmailX">Nit</label>
+                      <input minlength="10" maxlength="15" type="text" id="typeEmailX" class="form-control form-control-lg" required pattern="[0-9-]+"/> 
+                    </div>
+
+                    <button class="btn btn-outline-light btn-lg px-5" type="submit">Buscar</button>
+                    <!--Validacción NOMBRE, 30 caracteres, solo letras, obligatorio-->
+                    <div class="form-outline form-white mb-4 mt-4">
+                      <label class="form-label" for="typeEmailX">Nombre</label>
+                      <input minlength="2" maxlength="30" type="text" id="typeTextX" class="form-control form-control-lg" required pattern="[a-zA-Z]+"/> 
+                    </div>
+                    <!--Validacción DIRECCION, 30 caracteres, solo letras simbolos, obligatorio-->
+                    <div class="form-outline form-white mb-4">
+                      <label class="form-label" for="typeEmailX">Dirección</label>
+                      <input minlength="2" maxlength="30" type="text" id="typeEmailX" class="form-control form-control-lg" required pattern="[a-zA-Z0-9-_]+"/> 
+                    </div>
+                    <!--Validacción TELEFONO, 10 caracteres, solo numeros, obligatorio-->
+                    <div class="form-outline form-white mb-4">
+                      <label class="form-label" for="typeEmailX">Teléfono</label>
+                      <input minlength="10" maxlength="10" type="text" id="typeTelX" class="form-control form-control-lg" required pattern="[0-9]+"/> 
+                    </div>
+                    <button class="btn btn-outline-light btn-lg px-5" type="submit">Guardar Cambios</button>
+                    <button class="btn btn-outline-light btn-lg px-5" type="submit">Suspender</button>
+                    </form>
+                  </div>
+                        
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Agregar Factura -->
+      <div data-content id="add-f">
+        <div class="container py-5 h-100">
+          <div class="row d-flex justify-content-center align-items-center h-100">
+            <div class="col-12 col-md-8 col-lg-6 col-xl-10">
+              <div class="card bg-secondary text-white" style="border-radius: 1rem;">
+                <div class="card-body p-5">
+      
+                  <div class="mb-md-5 mt-md-4 pb-5">
+      
+                    <h2 class="fw-bold mb-2 text-uppercase">¡Registrar Nueva Factura!</h2>
+
+                    <p class="text-white-50 mb-5">Porfavor ingrese los datos requeridos</p>
+                    <form action="">
+                    <!--Validacción ID, 5 a 7 caracteres, solo numeros, obligatorio-->
+                    <div class="form-outline form-white mb-4">
+                      <label class="form-label" for="typeEmailX">ID</label>
+                      <input minlength="5" maxlength="7" type="text" id="typeEmailX" class="form-control form-control-lg" required pattern="[0-9]+"/> 
+                    </div>
+
+                    <div class="form-outline form-white mb-4">
+                      <label class="form-label" for="typeEmailX">Fecha</label>
+                      <input type="date" id="typeEmailX" class="form-control form-control-lg" required/> 
+                    </div>
+                    <!--Validacción ID, 10 a 15 caracteres, solo numeros, obligatorio-->
+                    <div class="form-outline form-white mb-4">
+                      <label class="form-label" for="typeEmailX">Nit Colegio</label>
+                      <input minlength="10" maxlength="15" type="text" id="typeEmailX" class="form-control form-control-lg" required pattern="[0-9-]+"/> 
+                    </div>
+                    <!--Validacción CANTIDAD-PLASTICO, 4 caracteres, solo numeros, obligatorio-->
+                    <div class="form-outline form-white mb-4">
+                      <label class="form-label" for="typeEmailX">Cantidad plástico (kg)</label>
+                      <input minlength="1" maxlength="4" type="text" id="typeEmailX" class="form-control form-control-lg" required pattern="[0-9,]+"/> 
+                    </div>
+                    <!--Validacción CANTIDAD-PAGADO, 4 a 7 caracteres, solo numeros, obligatorio--> 
+                    <div class="form-outline form-white mb-4">
+                      <label class="form-label" for="typePasswordX">Total Pagado</label>
+                      <input minlength="4" maxlength="7" type="text" id="typePasswordX" class="form-control form-control-lg" required pattern="[0-9]+"/>              
+                    </div>
+                    <!--Validacción ID, 5 caracteres, solo numeros, obligatorio-->
+                    <div class="form-outline form-white mb-4">
+                      <label class="form-label" for="typeEmailX">Código Caneca</label>
+                      <input minlength="5" maxlength="5" type="text" id="typeTextX" class="form-control form-control-lg" required pattern="[0-9]+"/> 
+                    </div>
+                    <!--Validacción ID, 10 caracteres, solo numeros, obligatorio-->
+                    <div class="form-outline form-white mb-4">
+                      <label class="form-label" for="typeEmailX">Documento Operario</label>
+                      <input minlength="10" maxlength="10" type="text" id="typeTextX" class="form-control form-control-lg" required pattern="[0-9]+"/> 
+                    </div>
+
+                    <button class="btn btn-outline-light btn-lg px-5" type="submit">Registrar</button>
+                    </form>
+                  </div>
+                        
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Consultar Factura -->
+      <div data-content id="edit-f">
+        <div class="container py-5 h-100">
+          <div class="row d-flex justify-content-center align-items-center h-100">
+            <div class="col-12 col-md-8 col-lg-6 col-xl-10">
+              <div class="card bg-secondary text-white" style="border-radius: 1rem;">
+                <div class="card-body p-5">
+      
+                  <div class="mb-md-5 mt-md-4 pb-5">
+      
+                    <h2 class="fw-bold mb-2 text-uppercase">¡Consultar Factura!</h2>
+
+                    <p class="text-white-50 mb-5">Porfavor ingrese el formato a buscar</p>
+                    <form action="">
+                    <!--Validacción ID, 5 a 7 caracteres, solo numeros, obligatorio-->
+                    <div class="form-outline form-white mb-4">
+                      <label class="form-label" for="typeEmailX">ID</label>
+                      <input minlength="5" maxlength="7" type="text" id="typeEmailX" class="form-control form-control-lg" required pattern="[0-9]+"/> 
+                    </div>
+
+                    <button class="btn btn-outline-light btn-lg px-5" type="submit">Buscar</button>
+
+                    <div class="form-outline form-white mb-4 mt-4">
+                      <label class="form-label" for="typeEmailX">Fecha</label>
+                      <input type="date" id="typeEmailX" class="form-control form-control-lg" required/> 
+                    </div>
+                    <!--Validacción ID, 10 a 15 caracteres, solo numeros, obligatorio-->
+                    <div class="form-outline form-white mb-4">
+                      <label class="form-label" for="typeEmailX">Nit Colegio</label>
+                      <input minlength="10" maxlength="15" type="text" id="typeEmailX" class="form-control form-control-lg" required pattern="[0-9-]+"/> 
+                    </div>
+                    <!--Validacción CANTIDAD-PLASTICO, 4 caracteres, solo numeros, obligatorio-->
+                    <div class="form-outline form-white mb-4">
+                      <label class="form-label" for="typeEmailX">Cantidad plástico (kg)</label>
+                      <input minlength="1" maxlength="4" type="text" id="typeEmailX" class="form-control form-control-lg" required pattern="[0-9,]+"/> 
+                    </div>
+                    <!--Validacción CANTIDAD-PAGADO, 4 a 7 caracteres, solo numeros, obligatorio--> 
+                    <div class="form-outline form-white mb-4">
+                      <label class="form-label" for="typePasswordX">Total Pagado</label>
+                      <input minlength="4" maxlength="7" type="text" id="typePasswordX" class="form-control form-control-lg" required pattern="[0-9]+"/>              
+                    </div>
+                    <!--Validacción ID, 5 caracteres, solo numeros, obligatorio-->
+                    <div class="form-outline form-white mb-4">
+                      <label class="form-label" for="typeEmailX">Código Caneca</label>
+                      <input minlength="5" maxlength="5" type="text" id="typeTextX" class="form-control form-control-lg" required pattern="[0-9]+"/> 
+                    </div>
+                    <!--Validacción ID, 10 caracteres, solo numeros, obligatorio-->
+                    <div class="form-outline form-white mb-4">
+                      <label class="form-label" for="typeEmailX">Documento Operario</label>
+                      <input minlength="10" maxlength="10" type="text" id="typeTextX" class="form-control form-control-lg" required pattern="[0-9]+"/> 
+                    </div>
+                    </form>
+                  </div>
+                        
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Plastico recogido por colegio -->
+      <div data-content id="pla-co">
+        <div class="container py-5 h-100">
+          <div class="row d-flex justify-content-center align-items-center h-100">
+            <div class="col-12 col-md-8 col-lg-6 col-xl-10">
+              <div class="card bg-secondary text-white" style="border-radius: 1rem;">
+                <div class="card-body p-5">
+      
+                  <div class="mb-md-5 mt-md-4 pb-5">
+      
+                    <h2 class="fw-bold mb-2 text-uppercase">¡Cantidad de Plastico Recogido en un Colegio!</h2>
+
+                    <p class="text-white-50 mb-5">Porfavor ingrese los intervalos de fechas</p>
+                    <form action="#">
+                    <!--Validacción ID, 10 a 15 caracteres, solo numeros, obligatorio-->
+                    <div class="form-outline form-white mb-4">
+                      <label class="form-label" for="typeEmailX">Nit del Colegio</label>
+                      <input minlength="10" maxlength="15" type="text" id="typeEmailX" class="form-control form-control-lg" required pattern="[0-9-]+"/> 
+                    </div>
+
+                    <div class="form-outline form-white mb-4">
+                      <label class="form-label" for="typeEmailX">Fecha Inicial</label>
+                      <input type="date" id="typeEmailX" class="form-control form-control-lg" /> 
+                    </div>
+
+                    <div class="form-outline form-white mb-4">
+                      <label class="form-label" for="typeEmailX">Fecha Final</label>
+                      <input type="date" id="typeEmailX" class="form-control form-control-lg" /> 
+                    </div>
+
+                    <button class="btn btn-outline-light btn-lg px-5" type="submit">Consultar</button>
+                    </form>
+                    <div class="form-outline form-white mb-4 mt-4">
+                      <label class="form-label" for="typeEmailX">Cantidad plástico (kg)</label>
+                      <input type="number" id="typeEmailX" class="form-control form-control-lg" readonly/> 
+                    </div>
+   
+                  </div>
+                        
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Plastico recogido por operario -->
+      <div data-content id="pla-o">
+        <div class="container py-5 h-100">
+          <div class="row d-flex justify-content-center align-items-center h-100">
+            <div class="col-12 col-md-8 col-lg-6 col-xl-10">
+              <div class="card bg-secondary text-white" style="border-radius: 1rem;">
+                <div class="card-body p-5">
+      
+                  <div class="mb-md-5 mt-md-4 pb-5">
+      
+                    <h2 class="fw-bold mb-2 text-uppercase">¡Cantidad de Plastico Recogido por operario!</h2>
+
+                    <p class="text-white-50 mb-5">Porfavor ingrese los intervalos de fechas</p>
+                    <form action="#">
+                    <!--Validacción ID, 10 caracteres, solo numeros, obligatorio-->
+                    <div class="form-outline form-white mb-4">
+                      <label class="form-label" for="typeEmailX">Documento del Operaio</label>
+                      <input minlength="10" maxlength="10" type="text" id="typeTextX" class="form-control form-control-lg" required pattern="[0-9]+"/> 
+                    </div>
+
+                    <div class="form-outline form-white mb-4">
+                      <label class="form-label" for="typeEmailX">Fecha Inicial</label>
+                      <input type="date" id="typeEmailX" class="form-control form-control-lg" /> 
+                    </div>
+
+                    <div class="form-outline form-white mb-4">
+                      <label class="form-label" for="typeEmailX">Fecha Final</label>
+                      <input type="date" id="typeEmailX" class="form-control form-control-lg" /> 
+                    </div>
+
+                    <button class="btn btn-outline-light btn-lg px-5" type="submit">Consultar</button>
+
+                    <div class="form-outline form-white mb-4 mt-4">
+                      <label class="form-label" for="typeEmailX">Cantidad plástico (kg)</label>
+                      <input type="number" id="typeEmailX" class="form-control form-control-lg" readonly/> 
+                    </div>
+                    </form>
+                  </div>
+                        
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Plastico recogido por operarios -->
+      <div data-content id="pla-os">
+        <div class="container py-5 h-100">
+          <div class="row d-flex justify-content-center align-items-center h-100">
+            <div class="col-12 col-md-8 col-lg-6 col-xl-10">
+              <div class="card bg-secondary text-white" style="border-radius: 1rem;">
+                <div class="card-body p-5">
+      
+                  <div class="mb-md-5 mt-md-4 pb-5">
+      
+                    <h2 class="fw-bold mb-2 text-uppercase">¡Cantidad de Plastico Recogido por operarios!</h2>
+
+                    <p class="text-white-50 mb-5">Porfavor ingrese los intervalos de fechas</p>
+
+                    <div class="form-outline form-white mb-4">
+                      <label class="form-label" for="typeEmailX">Fecha Inicial</label>
+                      <input type="date" id="typeEmailX" class="form-control form-control-lg" /> 
+                    </div>
+
+                    <div class="form-outline form-white mb-4">
+                      <label class="form-label" for="typeEmailX">Fecha Final</label>
+                      <input type="date" id="typeEmailX" class="form-control form-control-lg" /> 
+                    </div>
+
+                    <button class="btn btn-outline-light btn-lg px-5" type="submit">Consultar</button>
+
+                    <div class="form-outline form-white mb-4 mt-4">
+                      <table class="table table-responsive table-bordered">
+                        <thead>
+                            <tr>
+                                <th>ID Operario</th>
+                                <th>Nombre</th>
+                                <th>Plastico Total</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                        </tbody>
+                    </table> 
+                    </div>
+   
+                  </div>
+                        
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Plastico recogido por caneca -->
+      <div data-content id="pla-ca">
+        <div class="container py-5 h-100">
+          <div class="row d-flex justify-content-center align-items-center h-100">
+            <div class="col-12 col-md-8 col-lg-6 col-xl-10">
+              <div class="card bg-secondary text-white" style="border-radius: 1rem;">
+                <div class="card-body p-5">
+      
+                  <div class="mb-md-5 mt-md-4 pb-5">
+      
+                    <h2 class="fw-bold mb-2 text-uppercase">¡Cantidad de Plastico Recogido por caneca!</h2>
+
+                    <p class="text-white-50 mb-5">Porfavor ingrese los intervalos de fechas</p>
+                    <form action="#">
+                    <!--Validacción ID, 5 caracteres, solo numeros, obligatorio-->
+                    <div class="form-outline form-white mb-4">
+                      <label class="form-label" for="typeEmailX">Código Caneca</label>
+                      <input minlength="5" maxlength="5" type="text" id="typeTextX" class="form-control form-control-lg" required pattern="[0-9]+"/> 
+                    </div>
+
+                    <div class="form-outline form-white mb-4">
+                      <label class="form-label" for="typeEmailX">Fecha Inicial</label>
+                      <input type="date" id="typeEmailX" class="form-control form-control-lg" /> 
+                    </div>
+
+                    <div class="form-outline form-white mb-4">
+                      <label class="form-label" for="typeEmailX">Fecha Final</label>
+                      <input type="date" id="typeEmailX" class="form-control form-control-lg" /> 
+                    </div>
+
+                    <button class="btn btn-outline-light btn-lg px-5" type="submit">Consultar</button>
+
+                    <div class="form-outline form-white mb-4 mt-4">
+                      <label class="form-label" for="typeEmailX">Cantidad plástico (kg)</label>
+                      <input type="number" id="typeEmailX" class="form-control form-control-lg" readonly/> 
+                    </div>
+                    </form>
+                  </div>
+                        
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Dinero pagado por colegio -->
+      <div data-content id="din-co">
+        <div class="container py-5 h-100">
+          <div class="row d-flex justify-content-center align-items-center h-100">
+            <div class="col-12 col-md-8 col-lg-6 col-xl-10">
+              <div class="card bg-secondary text-white" style="border-radius: 1rem;">
+                <div class="card-body p-5">
+      
+                  <div class="mb-md-5 mt-md-4 pb-5">
+      
+                    <h2 class="fw-bold mb-2 text-uppercase">¡Cantidad de Dinero Pagado por Colegio!</h2>
+
+                    <p class="text-white-50 mb-5">Porfavor ingrese los intervalos de fechas</p>
+                    <form action="#">
+                      <!--Validacción ID, 10 a 15 caracteres, solo numeros, obligatorio-->
+                      <div class="form-outline form-white mb-4">
+                        <label class="form-label" for="typeEmailX">Nit del Colegio</label>
+                        <input minlength="10" maxlength="15" type="text" id="typeEmailX" class="form-control form-control-lg" required pattern="[0-9-]+"/> 
+                      </div>
+
+                    <div class="form-outline form-white mb-4">
+                      <label class="form-label" for="typeEmailX">Fecha Inicial</label>
+                      <input type="date" id="typeEmailX" class="form-control form-control-lg" /> 
+                    </div>
+
+                    <div class="form-outline form-white mb-4">
+                      <label class="form-label" for="typeEmailX">Fecha Final</label>
+                      <input type="date" id="typeEmailX" class="form-control form-control-lg" /> 
+                    </div>
+
+                    <button class="btn btn-outline-light btn-lg px-5" type="submit">Consultar</button>
+
+                    <div class="form-outline form-white mb-4 mt-4">
+                      <label class="form-label" for="typeEmailX">Cantidad Dinero (Pesos)</label>
+                      <input type="number" id="typeEmailX" class="form-control form-control-lg" readonly/> 
+                    </div>
+                    </form>
+                  </div>
+                        
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Plastico recogido por colegios -->
+      <div data-content id="din-t">
+        <div class="container py-5 h-100">
+          <div class="row d-flex justify-content-center align-items-center h-100">
+            <div class="col-12 col-md-8 col-lg-6 col-xl-10">
+              <div class="card bg-secondary text-white" style="border-radius: 1rem;">
+                <div class="card-body p-5">
+      
+                  <div class="mb-md-5 mt-md-4 pb-5">
+      
+                    <h2 class="fw-bold mb-2 text-uppercase">¡Cantidad de Dinero Pagado por COLEGIOS!</h2>
+
+                    <p class="text-white-50 mb-5">Porfavor ingrese los intervalos de fechas</p>
+
+                    <div class="form-outline form-white mb-4">
+                      <label class="form-label" for="typeEmailX">Fecha Inicial</label>
+                      <input type="date" id="typeEmailX" class="form-control form-control-lg" /> 
+                    </div>
+
+                    <div class="form-outline form-white mb-4">
+                      <label class="form-label" for="typeEmailX">Fecha Final</label>
+                      <input type="date" id="typeEmailX" class="form-control form-control-lg" /> 
+                    </div>
+
+                    <button class="btn btn-outline-light btn-lg px-5" type="submit">Consultar</button>
+
+                    <div class="form-outline form-white mb-4 mt-4">
+                      <table class="table table-responsive table-bordered">
+                        <thead>
+                            <tr>
+                                <th>Nit Colegio</th>
+                                <th>Nombre</th>
+                                <th>Pago Total</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                        </tbody>
+                    </table> 
+                    </div>
+   
+                  </div>
+                        
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Operario recolecta por colegio -->
+      <div data-content id="rec-co">
+        <div class="container py-5 h-100">
+          <div class="row d-flex justify-content-center align-items-center h-100">
+            <div class="col-12 col-md-8 col-lg-6 col-xl-10">
+              <div class="card bg-secondary text-white" style="border-radius: 1rem;">
+                <div class="card-body p-5">
+      
+                  <div class="mb-md-5 mt-md-4 pb-5">
+      
+                    <h2 class="fw-bold mb-2 text-uppercase">¡Operario Recolector por Colegio!</h2>
+
+                    <p class="text-white-50 mb-5">Porfavor ingrese los intervalos de fechas</p>
+                    <form action="#">
+                    <div class="form-outline form-white mb-4">
+                      <label class="form-label" for="typeEmailX">NIT colegio</label>
+                      <input type="number" id="typeEmailX" class="form-control form-control-lg" /> 
+                    </div>
+
+                    <div class="form-outline form-white mb-4">
+                      <label class="form-label" for="typeEmailX">Fecha Inicial</label>
+                      <input type="date" id="typeEmailX" class="form-control form-control-lg" /> 
+                    </div>
+
+                    <div class="form-outline form-white mb-4">
+                      <label class="form-label" for="typeEmailX">Fecha Final</label>
+                      <input type="date" id="typeEmailX" class="form-control form-control-lg" /> 
+                    </div>
+
+                    <button class="btn btn-outline-light btn-lg px-5" type="submit">Consultar</button>
+
+                    <div class="form-outline form-white mb-4 mt-4">
+                      <label class="form-label" for="typeEmailX">ID Operaio</label>
+                      <input type="number" id="typeEmailX" class="form-control form-control-lg" readonly/> 
+                    </div>
+
+                    <div class="form-outline form-white mb-4">
+                      <label class="form-label" for="typeEmailX">Nombre</label>
+                      <input type="text" id="typeEmailX" class="form-control form-control-lg" readonly/> 
+                    </div>
+                    </form>
+                  </div>
+                        
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+</body>
+</html>
