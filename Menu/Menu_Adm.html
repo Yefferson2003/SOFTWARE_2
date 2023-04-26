@@ -150,24 +150,25 @@
                     <h2 class="fw-bold mb-2 text-uppercase">¡Registrar Nuevo Administrador!</h2>
 
                     <p class="text-white-50 mb-5">Porfavor ingrese los datos del Usuario</p>
-                    <form action="#">
+
+                    <form action="../Add/agregar_adm.php" method="post">
                     <!--Validacción ID, 10 caracteres, solo numeros, obligatorio-->
                     <div class="form-outline form-white mb-4">
-                      <label class="form-label" for="typeTextX">Número de documento</label>
-                      <input minlength="10" maxlength="10" type="text" id="typeTextX" class="form-control form-control-lg" required pattern="[0-9]+"/> 
+                      <label class="form-label" for="typeText">Número de documento</label>
+                      <input minlength="10" maxlength="10" type="text" id="id_cedula_adm" name="id_cedula_adm" class="form-control form-control-lg" required pattern="[0-9]+"/> 
                     </div>
                     <!--Validacción NOMBRE, 30 caracteres, solo letras, obligatorio-->
                     <div class="form-outline form-white mb-4">
                       <label class="form-label" for="typeTextX">Nombre</label>
-                      <input minlength="2" maxlength="30" type="text" id="typeTextX" class="form-control form-control-lg" required pattern="[a-zA-Z]+"/> 
+                      <input minlength="2" maxlength="100" type="text" id="nombre_adm" name="nombre_adm" class="form-control form-control-lg" required pattern="[a-zA-Z ]+"/> 
                     </div>
                     <!--Validacción Contraseña, minimo 8 maximo 15 caracteres, obligatorio-->
                     <div class="form-outline form-white mb-4">
                       <label class="form-label" for="typePasswordX">Contraseña</label>
-                      <input minlength="8" maxlength="15" type="text" id="typePasswordX" class="form-control form-control-lg" required/>              
+                      <input minlength="8" maxlength="15" type="text" id="contrasena_adm" name="contrasena_adm" class="form-control form-control-lg" required/>              
                     </div>
-      
-                    <button class="btn btn-outline-light btn-lg px-5" type="submit">Registrar</button>
+                    <input class="btn btn-outline-light btn-lg px-5" type="submit" value="Agregar">
+                    <!-- <button class="btn btn-outline-light btn-lg px-5" type="submit">Registrar</button> -->
                     </form>
                   </div>
                         
@@ -242,11 +243,7 @@
                       <label class="form-label" for="typeEmailX">Número de documento</label>
                       <input minlength="10" maxlength="10" type="text" id="typeTextX" class="form-control form-control-lg" required pattern="[0-9]+"/> 
                     </div>
-                    <!--Validacción NOMBRE, 30 caracteres, solo letras, obligatorio-->
-                    <div class="form-outline form-white mb-4">
-                      <label class="form-label" for="typeEmailX">Nombre</label>
-                      <input minlength="2" maxlength="30" type="text" id="typeTextX" class="form-control form-control-lg" required pattern="[a-zA-Z]+"/> 
-                    </div>
+                    c
                     <!--Validacción TELEFONO, 10 caracteres, solo numeros, obligatorio-->
                     <div class="form-outline form-white mb-4">
                       <label class="form-label" for="typeEmailX">Teléfono</label>
@@ -352,18 +349,18 @@
                     <p class="text-white-50 mb-5">Porfavor ingrese los datos del elemento</p>
                     <form action="">
                     <!--Validacción ID, 5 caracteres, solo numeros, obligatorio-->
-                    <div class="form-outline form-white mb-4">
+                    <!-- <div class="form-outline form-white mb-4">
                       <label class="form-label" for="typeEmailX">Código</label>
                       <input minlength="5" maxlength="5" type="text" id="typeTextX" class="form-control form-control-lg" required pattern="[0-9]+"/> 
-                    </div>
-                    <!--Validacción TAMAÑO, 4 caracteres, solo numeros, obligatorio-->
+                    </div> -->
+                    <!--Validacción COLOR, 15, obligatorio-->
                     <div class="form-outline form-white mb-4">
-                      <label class="form-label" for="typeEmailX">Longitud M (Ancho x Alto)</label>
-                      <input minlength="1" maxlength="4" type="text" id="typeEmailX" class="form-control form-control-lg" required pattern="[0-9,]+"/> 
+                      <label class="form-label" for="typeEmailX">Color</label>
+                      <input maxlength="15" type="text" id="typeEmailX" class="form-control form-control-lg"  required pattern="[a-zA-Z]+"/> 
                     </div>
                     <!--Validacción CAPACIDAD, 4 caracteres, solo numeros, obligatorio-->
                     <div class="form-outline form-white mb-4">
-                      <label class="form-label" for="typeEmailX">Capacidad kg</label>
+                      <label class="form-label" for="typeEmailX">Capacidad Max (kg)</label>
                       <input minlength="1" maxlength="4" type="text" id="typeEmailX" class="form-control form-control-lg" required pattern="[0-9,]+"/> 
                     </div>
 
@@ -395,18 +392,18 @@
                     <!--Validacción ID, 5 caracteres, solo numeros, obligatorio-->
                     <div class="form-outline form-white mb-4">
                       <label class="form-label" for="typeEmailX">Código</label>
-                      <input minlength="5" maxlength="5" type="text" id="typeTextX" class="form-control form-control-lg" required pattern="[0-9]+"/> 
+                      <input minlength="4" type="text" id="typeTextX" class="form-control form-control-lg" required pattern="[0-9]+"/> 
                     </div>
 
                     <button class="btn btn-outline-light btn-lg px-5" type="submit">Buscar</button>
-                    <!--Validacción TAMAÑO, 4 caracteres, solo numeros, obligatorio-->
+                    <!--Validacción COLOR, 15, obligatorio-->
                     <div class="form-outline form-white mb-4 mt-4">
-                      <label class="form-label" for="typeEmailX">Longitud M (Ancho x Alto)</label>
-                      <input minlength="1" maxlength="4" type="text" id="typeEmailX" class="form-control form-control-lg" required pattern="[0-9,]+"/> 
+                      <label class="form-label" for="typeEmailX">Color</label>
+                      <input maxlength="15" type="text" id="typeEmailX" class="form-control form-control-lg"  required pattern="[a-zA-Z]+"/> 
                     </div>
                     <!--Validacción CAPACIDAD, 4 caracteres, solo numeros, obligatorio-->
                     <div class="form-outline form-white mb-4">
-                      <label class="form-label" for="typeEmailX">Capacidad kg</label>
+                      <label class="form-label" for="typeEmailX">Capacidad Max (kg)</label>
                       <input minlength="1" maxlength="4" type="text" id="typeEmailX" class="form-control form-control-lg" required pattern="[0-9,]+"/> 
                     </div>
 
@@ -530,19 +527,37 @@
                     <p class="text-white-50 mb-5">Porfavor ingrese los datos requeridos</p>
                     <form action="">
                     <!--Validacción ID, 5 a 7 caracteres, solo numeros, obligatorio-->
-                    <div class="form-outline form-white mb-4">
+                    <!-- <div class="form-outline form-white mb-4">
                       <label class="form-label" for="typeEmailX">ID</label>
                       <input minlength="5" maxlength="7" type="text" id="typeEmailX" class="form-control form-control-lg" required pattern="[0-9]+"/> 
+                    </div> -->
+                    <!--Validacción ID, 10 caracteres, solo numeros, obligatorio-->
+                    <div class="form-outline form-white mb-4">
+                      <label class="form-label" for="typeEmailX">Documento Operario</label>
+                      <input minlength="10" maxlength="10" type="text" id="typeTextX" class="form-control form-control-lg" required pattern="[0-9]+"/> 
                     </div>
-
+                    <!--Validacción NOMBRE, 30 caracteres, solo letras, obligatorio-->
+                    <div class="form-outline form-white mb-4">
+                      <label class="form-label" for="typeEmailX">Nombre Operario</label>
+                      <input minlength="2" maxlength="30" type="text" id="typeTextX" class="form-control form-control-lg" required pattern="[a-zA-Z]+"/> 
+                    </div>
                     <div class="form-outline form-white mb-4">
                       <label class="form-label" for="typeEmailX">Fecha</label>
                       <input type="date" id="typeEmailX" class="form-control form-control-lg" required/> 
                     </div>
                     <!--Validacción ID, 10 a 15 caracteres, solo numeros, obligatorio-->
                     <div class="form-outline form-white mb-4">
-                      <label class="form-label" for="typeEmailX">Nit Colegio</label>
+                      <label class="form-label" for="typeEmailX">Nit</label>
                       <input minlength="10" maxlength="15" type="text" id="typeEmailX" class="form-control form-control-lg" required pattern="[0-9-]+"/> 
+                    </div>
+                    <div class="form-outline form-white mb-4">
+                      <label class="form-label" for="typeEmailX">Nombre Colegio</label>
+                      <input minlength="2" maxlength="30" type="text" id="typeTextX" class="form-control form-control-lg" required pattern="[a-zA-Z]+"/> 
+                    </div>
+                    <!--Validacción ID, 5 caracteres, solo numeros, obligatorio-->
+                    <div class="form-outline form-white mb-4">
+                      <label class="form-label" for="typeEmailX">Código Caneca</label>
+                      <input minlength="5" maxlength="5" type="text" id="typeTextX" class="form-control form-control-lg" required pattern="[0-9]+"/> 
                     </div>
                     <!--Validacción CANTIDAD-PLASTICO, 4 caracteres, solo numeros, obligatorio-->
                     <div class="form-outline form-white mb-4">
@@ -554,17 +569,8 @@
                       <label class="form-label" for="typePasswordX">Total Pagado</label>
                       <input minlength="4" maxlength="7" type="text" id="typePasswordX" class="form-control form-control-lg" required pattern="[0-9]+"/>              
                     </div>
-                    <!--Validacción ID, 5 caracteres, solo numeros, obligatorio-->
-                    <div class="form-outline form-white mb-4">
-                      <label class="form-label" for="typeEmailX">Código Caneca</label>
-                      <input minlength="5" maxlength="5" type="text" id="typeTextX" class="form-control form-control-lg" required pattern="[0-9]+"/> 
-                    </div>
-                    <!--Validacción ID, 10 caracteres, solo numeros, obligatorio-->
-                    <div class="form-outline form-white mb-4">
-                      <label class="form-label" for="typeEmailX">Documento Operario</label>
-                      <input minlength="10" maxlength="10" type="text" id="typeTextX" class="form-control form-control-lg" required pattern="[0-9]+"/> 
-                    </div>
-
+                    
+                  
                     <button class="btn btn-outline-light btn-lg px-5" type="submit">Registrar</button>
                     </form>
                   </div>
@@ -598,14 +604,33 @@
 
                     <button class="btn btn-outline-light btn-lg px-5" type="submit">Buscar</button>
 
+                    <!--Validacción ID, 10 caracteres, solo numeros, obligatorio-->
                     <div class="form-outline form-white mb-4 mt-4">
+                      <label class="form-label" for="typeEmailX">Documento Operario</label>
+                      <input minlength="10" maxlength="10" type="text" id="typeTextX" class="form-control form-control-lg" required pattern="[0-9]+"/> 
+                    </div>
+                    <!--Validacción NOMBRE, 30 caracteres, solo letras, obligatorio-->
+                    <div class="form-outline form-white mb-4">
+                      <label class="form-label" for="typeEmailX">Nombre Operario</label>
+                      <input minlength="2" maxlength="30" type="text" id="typeTextX" class="form-control form-control-lg" required pattern="[a-zA-Z]+"/> 
+                    </div>
+                    <div class="form-outline form-white mb-4">
                       <label class="form-label" for="typeEmailX">Fecha</label>
                       <input type="date" id="typeEmailX" class="form-control form-control-lg" required/> 
                     </div>
                     <!--Validacción ID, 10 a 15 caracteres, solo numeros, obligatorio-->
                     <div class="form-outline form-white mb-4">
-                      <label class="form-label" for="typeEmailX">Nit Colegio</label>
+                      <label class="form-label" for="typeEmailX">Nit</label>
                       <input minlength="10" maxlength="15" type="text" id="typeEmailX" class="form-control form-control-lg" required pattern="[0-9-]+"/> 
+                    </div>
+                    <div class="form-outline form-white mb-4">
+                      <label class="form-label" for="typeEmailX">Nombre Colegio</label>
+                      <input minlength="2" maxlength="30" type="text" id="typeTextX" class="form-control form-control-lg" required pattern="[a-zA-Z]+"/> 
+                    </div>
+                    <!--Validacción ID, 5 caracteres, solo numeros, obligatorio-->
+                    <div class="form-outline form-white mb-4">
+                      <label class="form-label" for="typeEmailX">Código Caneca</label>
+                      <input minlength="5" maxlength="5" type="text" id="typeTextX" class="form-control form-control-lg" required pattern="[0-9]+"/> 
                     </div>
                     <!--Validacción CANTIDAD-PLASTICO, 4 caracteres, solo numeros, obligatorio-->
                     <div class="form-outline form-white mb-4">
@@ -616,16 +641,6 @@
                     <div class="form-outline form-white mb-4">
                       <label class="form-label" for="typePasswordX">Total Pagado</label>
                       <input minlength="4" maxlength="7" type="text" id="typePasswordX" class="form-control form-control-lg" required pattern="[0-9]+"/>              
-                    </div>
-                    <!--Validacción ID, 5 caracteres, solo numeros, obligatorio-->
-                    <div class="form-outline form-white mb-4">
-                      <label class="form-label" for="typeEmailX">Código Caneca</label>
-                      <input minlength="5" maxlength="5" type="text" id="typeTextX" class="form-control form-control-lg" required pattern="[0-9]+"/> 
-                    </div>
-                    <!--Validacción ID, 10 caracteres, solo numeros, obligatorio-->
-                    <div class="form-outline form-white mb-4">
-                      <label class="form-label" for="typeEmailX">Documento Operario</label>
-                      <input minlength="10" maxlength="10" type="text" id="typeTextX" class="form-control form-control-lg" required pattern="[0-9]+"/> 
                     </div>
                     </form>
                   </div>
